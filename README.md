@@ -46,8 +46,12 @@ screenshots and 3 previews per device size).
 
 They come from Debug builds on the Simulator, never from real data. Whereabouts
 Compass uses `-WCDemoData`, and Cinematic Teleprompter uses `-debugSampleLibrary`
-with `-debugMockCamera` (the Simulator has no camera, so the recorder shows a
-plain backdrop rather than a person). An XCUITest drove each app for the
+with `-debugMockCamera`. The Simulator has no camera, so the recorder's
+"camera feed" is an AI-generated photo of a person (made locally with
+Z-Image-Turbo, upscaled with SeedVR2; both Apache-2.0). A scratch,
+Debug-only patch of the app draws it under the recorder UI. For Cinematic,
+Vision separates the person from the background and the background is blurred,
+and a focus box is drawn on the face. Nobody real appears. An XCUITest drove each app for the
 previews while `xcrun simctl io recordVideo` recorded the screen. The
 recordings were then cut, scaled to the preview size and re-encoded with
 AVFoundation. The status bar is fixed at 9:41 with full signal and battery.
