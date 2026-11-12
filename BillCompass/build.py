@@ -18,7 +18,7 @@ import os, shutil
 
 ROOT = os.path.dirname(os.path.abspath(__file__))
 DOCS = ROOT
-SUPPORT_EMAIL = "billcompass@hotmail.com"   # swap once the account exists
+SUPPORT_EMAIL = "ryionconsulting@gmail.com"
 UPDATED = "27 September 2026"
 
 CSS = """/* Bill Compass — site styles.
