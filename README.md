@@ -29,6 +29,30 @@ at any address, whether that is `<org>.github.io/RyionSite/`, a
 The Whereabouts Compass and Cinematic Teleprompter pages are plain HTML and are
 edited directly.
 
+## App Store media
+
+`WhereaboutsCompass/AppStore/` and `CinematicTeleprompter/AppStore/` hold what
+gets uploaded to App Store Connect:
+
+| Folder | Spec |
+| --- | --- |
+| `Screenshots/iPhone-6.9/` | 1320 × 2868 PNG, no alpha (6.9" display, accepted for every iPhone size) |
+| `Screenshots/iPad-13/` | 2064 × 2752 PNG, no alpha (13" display, accepted for every iPad size) |
+| `Previews/iPhone-6.9.mp4` | App Preview: 886 × 1920, 30 fps, H.264 High, silent stereo AAC 256 kbps, 15–30 s |
+| `Previews/iPad-13.mp4` | App Preview: 1200 × 1600, same encoding |
+
+Files are numbered in the order they should appear on the App Store (up to 10
+screenshots and 3 previews per device size).
+
+They come from Debug builds on the Simulator, never from real data. Whereabouts
+Compass uses `-WCDemoData`, and Cinematic Teleprompter uses `-debugSampleLibrary`
+with `-debugMockCamera` (the Simulator has no camera, so the recorder shows a
+plain backdrop rather than a person). An XCUITest drove each app for the
+previews while `xcrun simctl io recordVideo` recorded the screen. The
+recordings were then cut, scaled to the preview size and re-encoded with
+AVFoundation. The status bar is fixed at 9:41 with full signal and battery.
+Bill Compass's App Store media is not kept here.
+
 ## Writing the copy
 
 Every claim on these pages was checked against the app's source rather than
