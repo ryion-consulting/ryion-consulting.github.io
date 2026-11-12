@@ -1,7 +1,8 @@
 # Bill Compass — website
 
 The public site for **Bill Compass**, a bill tracker for iPhone, iPad and Mac.
-Served by GitHub Pages at <https://billcompass-app.github.io>.
+Part of RyionSite, the one site for every Ryion app; this folder is the Bill Compass
+section of it. It was previously served on its own at <https://billcompass-app.github.io>.
 
 | Page | Purpose |
 | --- | --- |
@@ -20,7 +21,7 @@ is generated from it at build time, so the site can be edited on its own.
 
 The pages are plain HTML and can be edited directly. They are also generated
 by `build.py`, which holds the copy and the shared layout in one place —
-change the text there and run `python3 build.py .` to rewrite every page.
+change the text there and run `python3 build.py .` from this folder to rewrite every page.
 
 `assets/icon.png` is a 256px copy of the app icon; replace it when the app
 icon changes.
@@ -30,5 +31,5 @@ launched with `-BCScreenshotMode -launchSection <screen>` (and
 `-billLayout stickie` on iPad, `-billLayout grid` on the Mac), which seeds a made-up household into a
 store of its own, then scaled to 600px (iPhone), 1100px (iPad) or 1400px (Mac) JPEGs.
 
-`.nojekyll` tells Pages to serve the files as they are rather than running
-them through Jekyll.
+The `.nojekyll` at the root of RyionSite tells Pages to serve the files as
+they are rather than running them through Jekyll.

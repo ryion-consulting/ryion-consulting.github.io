@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <!-- Cinematic Teleprompter app icon, assembled from the layers in AppIcon.icon (light appearance). -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFD43A"/><stop offset="1" stop-color="#FFB80A"/></linearGradient>
+    <clipPath id="c1"><rect x="212" y="382" width="600" height="76" rx="20"/></clipPath>
+    <clipPath id="c2"><rect x="212" y="284" width="600" height="76" rx="20"/></clipPath>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="10" stdDeviation="14" flood-color="#5a3a00" flood-opacity=".35"/></filter>
+  </defs>
+  <rect width="1024" height="1024" rx="229" fill="url(#bg)"/>
+  <g filter="url(#sh)">
+    <rect x="212" y="472" width="600" height="390" rx="52" fill="#16161A"/>
+    <rect x="212" y="382" width="600" height="76" rx="20" fill="#16161A"/>
+    <g transform="rotate(-14 226 374)"><rect x="212" y="284" width="600" height="76" rx="20" fill="#16161A"/></g>
+    <circle cx="238" cy="372" r="22" fill="#16161A"/>
+    <g clip-path="url(#c1)" fill="#FFFFFF"><polygon points="-28,458 32,458 85.2,382 25.2,382"/><polygon points="92,458 152,458 205.2,382 145.2,382"/><polygon points="212,458 272,458 325.2,382 265.2,382"/><polygon points="332,458 392,458 445.2,382 385.2,382"/><polygon points="452,458 512,458 565.2,382 505.2,382"/><polygon points="572,458 632,458 685.2,382 625.2,382"/><polygon points="692,458 752,458 805.2,382 745.2,382"/><polygon points="812,458 872,458 925.2,382 865.2,382"/></g>
+    <g transform="rotate(-14 226 374)"><g clip-path="url(#c2)" fill="#FFFFFF"><polygon points="-28,360 32,360 85.2,284 25.2,284"/><polygon points="92,360 152,360 205.2,284 145.2,284"/><polygon points="212,360 272,360 325.2,284 265.2,284"/><polygon points="332,360 392,360 445.2,284 385.2,284"/><polygon points="452,360 512,360 565.2,284 505.2,284"/><polygon points="572,360 632,360 685.2,284 625.2,284"/><polygon points="692,360 752,360 805.2,284 745.2,284"/><polygon points="812,360 872,360 925.2,284 865.2,284"/></g></g>
+    <g fill="#FFFFFF"><rect x="282" y="544" width="400" height="38" rx="19" opacity="0.45"/><rect x="282" y="614" width="460" height="52" rx="26"/><rect x="282" y="698" width="340" height="38" rx="19" opacity="0.45"/><rect x="282" y="768" width="260" height="38" rx="19" opacity="0.28"/></g>
+  </g>
+</svg>

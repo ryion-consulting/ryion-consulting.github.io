@@ -211,7 +211,7 @@ def topbar(current):
 </div></header>'''
 
 FOOTER = f'''<footer><div class="wrap">
-  <span>Bill Compass — for iPhone, iPad and Mac</span>
+  <span>Bill Compass — for iPhone, iPad and Mac · <a href="../">More apps by Ryion</a></span>
   <nav><a href="features.html">Features</a><a href="guide.html">How to Use</a><a href="sync.html">iCloud Sync</a><a href="faq.html">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
 </div></footer>'''
 
@@ -806,8 +806,7 @@ PAGES = [
 if __name__ == "__main__":
     os.makedirs(os.path.join(DOCS, "assets"), exist_ok=True)
     open(os.path.join(DOCS, "style.css"), "w").write(CSS)
-    # Tells Pages to serve the files as they are rather than running Jekyll.
-    open(os.path.join(DOCS, ".nojekyll"), "w").write("")
+    # .nojekyll lives at the root of RyionSite, which covers this folder too.
 
     # The icon ships with this repo rather than being re-cut from the app's
     # asset catalog, so the site can be rebuilt without the app source
