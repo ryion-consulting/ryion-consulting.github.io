@@ -31,18 +31,26 @@ edited directly.
 
 ## App Store media
 
-`WhereaboutsCompass/AppStore/` and `CinematicTeleprompter/AppStore/` hold what
-gets uploaded to App Store Connect:
+`WhereaboutsCompass/AppStore/` and `CinematicTeleprompter/AppStore/` hold the
+screenshots that get uploaded to App Store Connect:
 
 | Folder | Spec |
 | --- | --- |
 | `Screenshots/iPhone-6.9/` | 1320 × 2868 PNG, no alpha (6.9" display, accepted for every iPhone size) |
 | `Screenshots/iPad-13/` | 2064 × 2752 PNG, no alpha (13" display, accepted for every iPad size) |
-| `Previews/iPhone-6.9.mp4` | App Preview: 886 × 1920, 30 fps, H.264 High, silent stereo AAC 256 kbps, 15–30 s |
-| `Previews/iPad-13.mp4` | App Preview: 1200 × 1600, same encoding |
 
 Files are numbered in the order they should appear on the App Store (up to 10
-screenshots and 3 previews per device size).
+screenshots per device size).
+
+The App Preview videos are too large for this repo and live outside it, in
+`~/Documents/App Store Artifacts/<App Name>/App Previews/` (`iPhone-6.9.mp4`:
+886 × 1920; `iPad-13.mp4`: 1200 × 1600; both 30 fps, H.264 High, silent stereo
+AAC 256 kbps, 15–30 s).
+The home page's gallery plays them through `_artifacts`, a git-ignored link to
+that folder, so they show only when previewing on this Mac. Where the link is
+missing, such as on the public site, each video removes itself from the
+page. To recreate the link:
+`ln -s ~/Documents/"App Store Artifacts" _artifacts`.
 
 They come from Debug builds on the Simulator, never from real data. Whereabouts
 Compass uses `-WCDemoData`, and Cinematic Teleprompter uses `-debugSampleLibrary`
@@ -56,6 +64,13 @@ previews while `xcrun simctl io recordVideo` recorded the screen. The
 recordings were then cut, scaled to the preview size and re-encoded with
 AVFoundation. The status bar is fixed at 9:41 with full signal and battery.
 Bill Compass's App Store media is not kept here.
+
+The root `index.html` has a review gallery of this media. It is hidden unless
+`_artifacts` (see above) is reachable, so it appears only on the local preview
+server, never on the public site. Its thumbnails are
+small JPEGs in `<App>/assets/store/` (480 px wide for iPhone,
+600 px for iPad, made with `sips`). Each thumbnail links to the full PNG.
+When the screenshots change, remake the thumbnails too.
 
 ## Writing the copy
 
@@ -76,7 +91,8 @@ at the top of it.
 ## Previewing
 
 ```
-python3 -m http.server 8000
+python3 serve.py
 ```
 
-Then open <http://localhost:8000/>.
+Then open <http://localhost:8000/>. `serve.py` is `python3 -m http.server`
+plus byte-range support, which Safari needs to play the App Preview videos.

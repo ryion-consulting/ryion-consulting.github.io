@@ -30,6 +30,21 @@ h1{font-family:var(--display);font-weight:700;letter-spacing:-.025em;line-height
 .apps span{display:block;color:var(--muted);font-size:15.5px;margin-top:3px}
 .apps small{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:8px}
 .apps .links{display:flex;gap:16px;margin-top:8px;font-size:14.5px;color:var(--accent)}
+.store{margin:0 0 64px}
+.store h2{font-family:var(--display);font-size:clamp(26px,4vw,34px);letter-spacing:-.02em;line-height:1.1;margin:0}
+.store .note{color:var(--muted);margin:10px 0 0;max-width:56ch}
+.app-media{margin-top:40px;padding-top:28px;border-top:1px solid var(--hair)}
+.app-media h3{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:22px;letter-spacing:-.01em;margin:0}
+.app-media h3 img{width:36px;height:36px;border-radius:22.37%}
+.app-media h4{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:24px 0 12px}
+.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding:2px 2px 14px;margin:0 -2px;overscroll-behavior-x:contain}
+.strip figure{flex:none;margin:0;scroll-snap-align:start}
+.strip img,.strip video{display:block;width:auto;height:400px;border-radius:14px;border:1px solid var(--hair);background:var(--card)}
+.strip.ipad img,.strip.ipad video{height:320px}
+.strip a:focus-visible img{outline:2px solid var(--accent);outline-offset:2px}
+.strip video{background:#000}
+.strip figcaption{font-size:13.5px;color:var(--muted);margin-top:7px}
+@media (max-width:520px){.strip img,.strip video{height:320px}.strip.ipad img,.strip.ipad video{height:240px}}
 footer{border-top:1px solid var(--hair);padding:26px 0 44px;color:var(--muted);font-size:14.5px}
 @media (max-width:520px){header{padding-top:48px}.apps a{grid-template-columns:64px 1fr;gap:16px;padding:18px}.apps img{width:64px;height:64px}}
 </style>
@@ -56,6 +71,73 @@ footer{border-top:1px solid var(--hair);padding:26px 0 44px;color:var(--muted);f
       <div><b>Cinematic Teleprompter</b><span>Read your script beside the lens while you record in Normal or Cinematic mode.</span><small>iPhone · iPad</small></div>
     </a></li>
   </ul>
+
+  <!-- Review-only: hidden unless _artifacts (a git-ignored link to ~/Documents/App Store Artifacts) is reachable, i.e. on the local preview server. -->
+  <section class="store" aria-labelledby="store-h" hidden>
+    <h2 id="store-h">App Store screenshots and previews</h2>
+    <p class="note">Tap a screenshot for the full-size file. Each app has its own set for iPhone (6.9″) and iPad (13″).</p>
+    <article class="app-media" id="whereabouts">
+      <h3><img src="WhereaboutsCompass/assets/icon.png" alt=""> Whereabouts Compass</h3>
+      <h4>iPhone 6.9″</h4>
+      <div class="strip iphone">
+        <figure><video controls playsinline preload="metadata" width="480" height="1040" src="_artifacts/Whereabouts%20Compass/App%20Previews/iPhone-6.9.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:19</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/01-now.png"><img src="WhereaboutsCompass/assets/store/iphone-01-now.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Now"></a><figcaption>Now</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/02-trips.png"><img src="WhereaboutsCompass/assets/store/iphone-02-trips.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Trips"></a><figcaption>Trips</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/03-countries.png"><img src="WhereaboutsCompass/assets/store/iphone-03-countries.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Countries"></a><figcaption>Countries</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/04-trip-detail.png"><img src="WhereaboutsCompass/assets/store/iphone-04-trip-detail.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Trip detail"></a><figcaption>Trip detail</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/05-export.png"><img src="WhereaboutsCompass/assets/store/iphone-05-export.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Export"></a><figcaption>Export</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/06-photo-import.png"><img src="WhereaboutsCompass/assets/store/iphone-06-photo-import.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Photo import"></a><figcaption>Photo import</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/07-privacy.png"><img src="WhereaboutsCompass/assets/store/iphone-07-privacy.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Privacy"></a><figcaption>Privacy</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/08-now-dark.png"><img src="WhereaboutsCompass/assets/store/iphone-08-now-dark.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Now, dark"></a><figcaption>Now, dark</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/09-trips-dark.png"><img src="WhereaboutsCompass/assets/store/iphone-09-trips-dark.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Trips, dark"></a><figcaption>Trips, dark</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/10-onboarding-welcome.png"><img src="WhereaboutsCompass/assets/store/iphone-10-onboarding-welcome.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Welcome"></a><figcaption>Welcome</figcaption></figure>
+      </div>
+      <h4>iPad 13″</h4>
+      <div class="strip ipad">
+        <figure><video controls playsinline preload="metadata" width="600" height="800" src="_artifacts/Whereabouts%20Compass/App%20Previews/iPad-13.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:19</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/01-now.png"><img src="WhereaboutsCompass/assets/store/ipad-01-now.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Now"></a><figcaption>Now</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/02-trips.png"><img src="WhereaboutsCompass/assets/store/ipad-02-trips.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Trips"></a><figcaption>Trips</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/03-countries.png"><img src="WhereaboutsCompass/assets/store/ipad-03-countries.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Countries"></a><figcaption>Countries</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/04-trip-detail.png"><img src="WhereaboutsCompass/assets/store/ipad-04-trip-detail.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Trip detail"></a><figcaption>Trip detail</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/05-export.png"><img src="WhereaboutsCompass/assets/store/ipad-05-export.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Export"></a><figcaption>Export</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/06-photo-import.png"><img src="WhereaboutsCompass/assets/store/ipad-06-photo-import.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Photo import"></a><figcaption>Photo import</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/07-privacy.png"><img src="WhereaboutsCompass/assets/store/ipad-07-privacy.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Privacy"></a><figcaption>Privacy</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/08-now-dark.png"><img src="WhereaboutsCompass/assets/store/ipad-08-now-dark.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Now, dark"></a><figcaption>Now, dark</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/09-trips-dark.png"><img src="WhereaboutsCompass/assets/store/ipad-09-trips-dark.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Trips, dark"></a><figcaption>Trips, dark</figcaption></figure>
+        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/10-onboarding-welcome.png"><img src="WhereaboutsCompass/assets/store/ipad-10-onboarding-welcome.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Welcome"></a><figcaption>Welcome</figcaption></figure>
+      </div>
+    </article>
+    <article class="app-media" id="teleprompter">
+      <h3><img src="CinematicTeleprompter/assets/icon.png" alt=""> Cinematic Teleprompter</h3>
+      <h4>iPhone 6.9″</h4>
+      <div class="strip iphone">
+        <figure><video controls playsinline preload="metadata" width="480" height="1040" src="_artifacts/Cinematic%20Teleprompter/App%20Previews/iPhone-6.9.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:22</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/01-recorder.png"><img src="CinematicTeleprompter/assets/store/iphone-01-recorder.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Recorder"></a><figcaption>Recorder</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/02-cinematic.png"><img src="CinematicTeleprompter/assets/store/iphone-02-cinematic.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Cinematic mode"></a><figcaption>Cinematic mode</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/03-library.png"><img src="CinematicTeleprompter/assets/store/iphone-03-library.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Library"></a><figcaption>Library</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/04-script-settings.png"><img src="CinematicTeleprompter/assets/store/iphone-04-script-settings.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Script settings"></a><figcaption>Script settings</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/05-editor.png"><img src="CinematicTeleprompter/assets/store/iphone-05-editor.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Editor"></a><figcaption>Editor</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/06-prompt-only.png"><img src="CinematicTeleprompter/assets/store/iphone-06-prompt-only.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Prompt only"></a><figcaption>Prompt only</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/07-library-dark.png"><img src="CinematicTeleprompter/assets/store/iphone-07-library-dark.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Library, dark"></a><figcaption>Library, dark</figcaption></figure>
+      </div>
+      <h4>iPad 13″</h4>
+      <div class="strip ipad">
+        <figure><video controls playsinline preload="metadata" width="600" height="800" src="_artifacts/Cinematic%20Teleprompter/App%20Previews/iPad-13.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:23</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/01-recorder.png"><img src="CinematicTeleprompter/assets/store/ipad-01-recorder.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Recorder"></a><figcaption>Recorder</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/02-cinematic.png"><img src="CinematicTeleprompter/assets/store/ipad-02-cinematic.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Cinematic mode"></a><figcaption>Cinematic mode</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/03-library.png"><img src="CinematicTeleprompter/assets/store/ipad-03-library.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Library"></a><figcaption>Library</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/04-script-settings.png"><img src="CinematicTeleprompter/assets/store/ipad-04-script-settings.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Script settings"></a><figcaption>Script settings</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/05-editor.png"><img src="CinematicTeleprompter/assets/store/ipad-05-editor.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Editor"></a><figcaption>Editor</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/06-prompt-only.png"><img src="CinematicTeleprompter/assets/store/ipad-06-prompt-only.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Prompt only"></a><figcaption>Prompt only</figcaption></figure>
+        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/07-library-dark.png"><img src="CinematicTeleprompter/assets/store/ipad-07-library-dark.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Library, dark"></a><figcaption>Library, dark</figcaption></figure>
+      </div>
+    </article>
+  </section>
+  <script>
+    fetch("_artifacts/README.txt", {method: "HEAD", cache: "no-store"})
+      .then(r => { if (r.ok) document.querySelector(".store").hidden = false })
+      .catch(() => {})
+  </script>
 </main>
 
 <footer><div class="wrap">© 2026 Ryion · Privacy policies: <a href="BillCompass/privacy.html" style="color:inherit">Bill Compass</a>, <a href="WhereaboutsCompass/privacy.html" style="color:inherit">Whereabouts Compass</a>, <a href="CinematicTeleprompter/privacy.html" style="color:inherit">Cinematic Teleprompter</a></div></footer>
