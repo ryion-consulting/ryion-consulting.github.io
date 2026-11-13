@@ -165,26 +165,6 @@ figcaption{font-size:14px;color:var(--muted);margin-top:12px;text-align:center}
 /* Teleprompter-only pieces. */
 .btn.primary{color:#16161A}
 @media (prefers-color-scheme:light){ .btn.primary{background:var(--gold);border-color:var(--gold)} }
-/* A drawing of the recorder: the script band near the lens, over the camera. */
-.prompter{position:relative;max-width:300px;margin:44px auto 0;aspect-ratio:9/19.5;border-radius:44px;
-  background:linear-gradient(160deg,#3a3a44,#121215 70%);border:8px solid #0b0b0d;
-  box-shadow:0 2px 6px rgba(20,20,26,.2),0 30px 60px -30px rgba(20,20,26,.6);overflow:hidden;text-align:left}
-.prompter .lens{position:absolute;top:12px;left:50%;width:84px;height:24px;margin-left:-42px;border-radius:12px;background:#000}
-.prompter .band{position:absolute;top:48px;left:12px;right:12px;padding:14px 16px;border-radius:18px;
-  background:rgba(0,0,0,.62);color:#fff;font-size:15px;line-height:1.5}
-.prompter .band .read{color:rgba(255,255,255,.4)}
-.prompter .band .line{display:block;border-left:3px solid var(--gold);padding-left:8px;margin:2px 0 2px -11px}
-.prompter .subject{position:absolute;left:50%;bottom:110px;width:130px;height:170px;margin-left:-65px;filter:blur(.4px)}
-.prompter .subject::before{content:"";position:absolute;left:50%;top:0;width:70px;height:70px;margin-left:-35px;border-radius:50%;background:#c9a27c}
-.prompter .subject::after{content:"";position:absolute;left:0;right:0;bottom:0;height:92px;border-radius:65px 65px 16px 16px;background:#55505e}
-.prompter .focus{position:absolute;left:50%;bottom:198px;width:94px;height:94px;margin-left:-47px;border:2px solid var(--gold);border-radius:12px}
-.prompter .bar{position:absolute;left:0;right:0;bottom:22px;display:flex;justify-content:center;align-items:center;gap:14px;
-  font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:#fff;text-transform:uppercase}
-.prompter .bar .pill{padding:5px 10px;border-radius:999px;background:rgba(255,255,255,.14)}
-.prompter .bar .pill.on{background:var(--gold);color:#16161A}
-.prompter .rec{width:54px;height:54px;border-radius:50%;border:4px solid #fff;display:grid;place-items:center}
-.prompter .rec::after{content:"";width:40px;height:40px;border-radius:50%;background:var(--rec)}
-@media (max-width:520px){ .prompter{max-width:250px} }
 .locks{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px;margin-top:6px}
 .locks > div{background:var(--card);border:1px solid var(--hair);border-radius:14px;padding:20px 22px}
 .locks ul{margin:6px 0 0;padding-left:18px;color:var(--muted);font-size:15.5px}
