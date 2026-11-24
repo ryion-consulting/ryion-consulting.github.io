@@ -67,8 +67,12 @@ def platforms(app, sep=" · "):
 def head(title, desc, here, icon=None, robots=None):
     r = up(here)
     extra = ""
-    if icon:
+    if icon:  # an app's own pages wear its app icon
         extra += f'\n<link rel="icon" href="{icon}">\n<link rel="apple-touch-icon" href="{icon}">'
+    else:     # everywhere else, the Ryion compass mark
+        extra += (f'\n<link rel="icon" href="{r}favicon.svg" type="image/svg+xml">'
+                  f'\n<link rel="icon" href="{r}favicon-96.png" sizes="96x96" type="image/png">'
+                  f'\n<link rel="apple-touch-icon" href="{r}apple-touch-icon.png">')
     if robots:
         extra += f'\n<meta name="robots" content="{robots}">'
     return f"""<!doctype html>
