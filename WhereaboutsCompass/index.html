@@ -9,121 +9,80 @@
 <link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&amp;family=Instrument+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../almanac.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
-<body>
-<header class="topbar"><div class="wrap">
-  <a class="brand" href="index.html"><img src="assets/icon.png" alt=""> Whereabouts Compass</a>
-  <nav><a href="#how">How to Use</a><a href="#limits">Good to Know</a><a href="#faq">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
-</div></header>
+<body class="app hue-terra">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="mast">
+  <a class="wordmark" href="../index.html">Ryion</a>
+  <a class="crumb" href="index.html"><img src="assets/icon.png" width="256" height="256" alt="">Whereabouts Compass</a>
+  <nav aria-label="Whereabouts Compass"><a href="#how">How to Use</a><a href="#limits">Good to Know</a><a href="#faq">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
+</header>
 
-<div class="hero"><div class="wrap">
-  <img class="icon" src="assets/icon.png" alt="The Whereabouts Compass app icon">
-  <h1>Which countries, and exactly when?</h1>
-  <p class="tagline">Your travel history, kept quietly in the background and ready when a form asks for it.</p>
-  <p class="platforms">iPhone · iPad · Free</p>
-  <div class="ctas">
-    <a class="btn primary" href="#how">How to use it</a>
-    <a class="btn" href="privacy.html">Privacy</a>
+<section class="app-hero">
+  <div class="app-hero-text">
+    <p class="eyebrow"><span>N° 02</span>iPhone · iPad · Free</p>
+    <h1>Which countries, and exactly when?</h1>
+    <p class="lead">Your travel history, kept quietly in the background and ready when a form asks for it.</p>
+    <div class="ctas"><a class="btn solid" href="#how">How to use it</a><a class="btn" href="privacy.html">Privacy</a></div>
+    <p class="note">Coming to the App Store</p>
   </div>
-  <p class="storenote">Coming to the App Store</p>
-  <div class="pair">
-    <figure><img class="shot" src="assets/screens/now.jpg" alt="The Now screen: a map with a flag on South Korea, the city Seoul, and days there so far, above the three most recent trips" decoding="async"></figure>
-    <figure><img class="shot" src="assets/screens/trips.jpg" alt="The Trips screen: trips grouped by year, each with its flag, dates and number of days" decoding="async"></figure>
+  <div class="app-hero-art">
+    <span class="art-no" aria-hidden="true">02</span>
+    <img class="icon" src="assets/icon.png" width="256" height="256" alt="The Whereabouts Compass app icon">
+    <figure class="phone p1"><img src="assets/screens/now.jpg" width="600" height="1304" alt="The Now screen: a map with a flag on South Korea, the city Seoul, and days there so far, above the three most recent trips" decoding="async"></figure>
+    <figure class="phone p2"><img src="assets/screens/trips.jpg" width="600" height="1304" alt="The Trips screen: trips grouped by year, each with its flag, dates and number of days" decoding="async"></figure>
   </div>
-</div></div>
+</section>
 
-<section><div class="wrap">
-  <h2>Built for the five-year question</h2>
-  <p class="lead">Visa, green card, citizenship and tax forms ask where you were, and on which dates, for years back. Nobody can answer that from memory. Whereabouts Compass keeps the answer for you.</p>
-  <ul class="features">
-    <li><b>Useful on day one</b><span>Rebuild years of past trips from the dates and places stored in your photos, in minutes and with no network.</span></li>
-    <li><b>Silent after that</b><span>It logs the country and city you are in. No check-ins, no notifications, and no continuous GPS.</span></li>
-    <li><b>Counts that match the form</b><span>Arrival and departure days both count, so 3 to 10 May is 8 days, in the local time of the place you were.</span></li>
-    <li><b>Ready to export</b><span>A PDF to attach, a CSV for a spreadsheet, or one trip per line to paste into a web form.</span></li>
-  </ul>
-</div></section>
+<main id="main">
+<section class="sec kind-features">
+<header class="sec-head" data-reveal><p class="sec-label"><span class="sec-no">01</span>Why</p><h2>Built for the five-year question</h2><p class="lead">Visa, green card, citizenship and tax forms ask where you were, and on which dates, for years back. Nobody can answer that from memory. Whereabouts Compass keeps the answer for you.</p></header>
+<div class="sec-body"><ul class="defs"><li class="card" data-reveal><b>Useful on day one</b><span>Rebuild years of past trips from the dates and places stored in your photos, in minutes and with no network.</span></li><li class="card" data-reveal><b>Silent after that</b><span>It logs the country and city you are in. No check-ins, no notifications, and no continuous GPS.</span></li><li class="card" data-reveal><b>Counts that match the form</b><span>Arrival and departure days both count, so 3 to 10 May is 8 days, in the local time of the place you were.</span></li><li class="card" data-reveal><b>Ready to export</b><span>A PDF to attach, a CSV for a spreadsheet, or one trip per line to paste into a web form.</span></li></ul></div>
+</section>
+<section class="sec kind-steps" id="how">
+<header class="sec-head" data-reveal><p class="sec-label"><span class="sec-no">02</span>How to use it</p><h2>How to use it</h2></header>
+<div class="sec-body"><div class="steps-wrap"><div><ol class="steps"><li><b>Set it up once.</b> The first launch explains how it works, then asks for your location. Allow it while using the app. When the banner on <b>Now</b> asks, choose <b>Allow Always</b>. Without Always, days when the app is closed are not recorded.</li><li><b>Fill in the past from your photos.</b> Open <span class="path">Settings → Import from Photos</span>. It reads only the date and place stored with each photo, never the picture. When it finishes, choose <b>Review Detected Trips</b> and <b>Confirm</b>, edit or delete each one.</li><li><b>Then let it run.</b> <b>Now</b> shows the country and city you are in and how many days you have been there. <b>Trips</b> lists every trip away from home, grouped by year.</li><li><b>Check and correct.</b> Open a trip to see its places and a map. An amber <b>?</b> marks an estimated date. Pick the real date and the trip stays exactly as you set it. Missed one? Use <b>Add a Trip</b> on the Trips screen.</li><li><b>Count the days.</b> <b>Countries</b> shows the total days, trips, first and last visit, and the last 12 months for each country. Set a date range at the top to match your form.</li><li><b>Export when a form asks.</b> Open <span class="path">Settings → Export Travel History</span>, choose a range (Last 5 years, Last 10 years, Last 12 months, Since a date or Custom range), then <b>PDF</b>, <b>CSV</b> or <b>Copy as Text</b>.</li></ol></div><figure class="steps-fig" data-reveal><div class="phone"><img src="assets/screens/photo-import.jpg" width="600" height="1304" alt="The Import from Photos screen, explaining that only the date and place of each photo are read" loading="lazy" decoding="async"></div></figure></div></div>
+</section>
+<section class="sec kind-gallery">
+<header class="sec-head" data-reveal><p class="sec-label"><span class="sec-no">03</span>Screens</p></header>
+<div class="sec-body"><div class="gallery"><figure class="plate"><div class="phone"><img src="assets/screens/trip-detail.jpg" width="600" height="1304" alt="Trip detail: dates you can edit, the cities visited and a small map" loading="lazy" decoding="async"></div><figcaption>Trip detail: dates, places and a map</figcaption></figure><figure class="plate"><div class="phone"><img src="assets/screens/countries.jpg" width="600" height="1304" alt="The Countries screen: each country with its total days and trips" loading="lazy" decoding="async"></div><figcaption>Countries: totals for any date range</figcaption></figure><figure class="plate"><div class="phone"><img src="assets/screens/export.jpg" width="600" height="1304" alt="The Export screen: a date range, what is included, a preview, and PDF and CSV buttons" loading="lazy" decoding="async"></div><figcaption>Export: PDF, CSV or plain text</figcaption></figure></div></div>
+</section>
+<section class="sec kind-fields">
+<header class="sec-head" data-reveal><p class="sec-label"><span class="sec-no">04</span>Settings</p><h2>Settings worth knowing</h2></header>
+<div class="sec-body"><dl class="fields"><div><dt>Home country</dt><dd>Trips at home are left out of the main list and the exports. It is set from your first location, and you can change it.</dd></div><div><dt>How days are counted</dt><dd><b>Count arrival and departure days</b> is on by default. You can also ignore trips shorter than a number of hours, if your form does. Every export states the rules it used.</dd></div><div><dt>Sync with iCloud</dt><dd>On by default, so your iPhone and iPad agree. It syncs through your own private iCloud, and a change takes effect the next time the app opens.</dd></div><div><dt>Backup</dt><dd><span class="path">Export Travel History → Full Backup and Restore</span> saves everything to one file and brings it back on another device. Restoring only adds what is missing, so it is safe to run twice.</dd></div><div><dt>Deleted Trips</dt><dd>Brings back a trip you deleted.</dd></div><div><dt>How It Works</dt><dd>The first-launch explanation, for when you skipped past it.</dd></div></dl></div>
+</section>
+<section class="sec kind-list" id="limits">
+<header class="sec-head" data-reveal><p class="sec-label"><span class="sec-no">05</span>Good to know</p><h2>Good to know</h2></header>
+<div class="sec-body"><ul class="notes"><li><b>It needs Always location.</b> Without it, days when the app is closed show up as gaps.</li><li><b>It notices stops, not every mile.</b> A country you only drive or fly through without stopping may not appear.</li><li><b>Crossing dates can be estimates.</b> When readings are sparse, the border date is marked with an amber <b>?</b>. Check those before you export.</li><li><b>Borders are accurate to about a kilometre.</b> Right at a border, a reading can land next door. Vatican City counts as Italy.</li><li><b>Open water is not a country.</b> A cruise shows as a gap between ports.</li><li><b>Layovers are not detected yet.</b> A stop at an airport can appear as a short trip. Delete it, or set a minimum trip length.</li><li><b>Photos fill in only what they saw.</b> Imported trips stay estimates until you confirm them.</li><li><b>It is a record, not advice.</b> It counts days from your own data. It does not decide tax residency or visa eligibility.</li></ul></div>
+</section>
+<section class="sec kind-pledge">
+<header class="sec-head" data-reveal><p class="sec-label"><span class="sec-no">06</span>Privacy</p></header>
+<div class="sec-body"><div class="pledge tone-green" data-reveal><span class="stamp">Privacy</span><p>No account, no ads, no analytics and no third-party code. On the App Store its privacy label reads <b>Data Not Collected</b>. The country is worked out on your phone from built-in maps. The only network requests go to Apple Maps, to name a city and to draw the map on a trip's page. <a href="privacy.html">Read the privacy policy</a>.</p></div></div>
+</section>
+<section class="sec kind-faq" id="faq">
+<header class="sec-head" data-reveal><p class="sec-label"><span class="sec-no">07</span>Questions</p><h2>Questions</h2></header>
+<div class="sec-body"><div class="faq"><details><summary>Does it drain the battery?</summary><div class="answer"><p>No. It uses the same low-power visit and significant-location services iOS uses itself, based on cell and Wi-Fi. It never turns on continuous GPS.</p></div></details><details><summary>Can I use it if I just installed it?</summary><div class="answer"><p>Yes. That is what the photo import is for. Run it from <span class="path">Settings → Import from Photos</span>, then confirm the trips it finds.</p></div></details><details><summary>Can I give it access to only some photos?</summary><div class="answer"><p>Yes. Limited Access works. Choose <b>Share More Photos</b> on the import screen to add more later.</p></div></details><details><summary>A trip has the wrong dates</summary><div class="answer"><p>Open it and pick the right dates. Any edit confirms the trip, so the app never changes it again.</p></div></details><details><summary>How do I move to a new phone?</summary><div class="answer"><p>With iCloud sync on, your history arrives by itself. Without it, make a backup from <span class="path">Export Travel History → Full Backup and Restore</span> and restore it on the new phone.</p></div></details><details><summary>How do I delete everything?</summary><div class="answer"><p><span class="path">Settings → Privacy → Erase All Data</span>. With iCloud sync on, it is erased from your other devices too.</p></div></details></div></div>
+</section>
+</main>
 
-<section id="how"><div class="wide">
-  <div class="split">
-    <div>
-      <h2>How to use it</h2>
-      <ol class="steps">
-        <li><b>Set it up once.</b> The first launch explains how it works, then asks for your location. Allow it while using the app. When the banner on <b>Now</b> asks, choose <b>Allow Always</b>. Without Always, days when the app is closed are not recorded.</li>
-        <li><b>Fill in the past from your photos.</b> Open <span class="path">Settings → Import from Photos</span>. It reads only the date and place stored with each photo, never the picture. When it finishes, choose <b>Review Detected Trips</b> and <b>Confirm</b>, edit or delete each one.</li>
-        <li><b>Then let it run.</b> <b>Now</b> shows the country and city you are in and how many days you have been there. <b>Trips</b> lists every trip away from home, grouped by year.</li>
-        <li><b>Check and correct.</b> Open a trip to see its places and a map. An amber <b>?</b> marks an estimated date. Pick the real date and the trip stays exactly as you set it. Missed one? Use <b>Add a Trip</b> on the Trips screen.</li>
-        <li><b>Count the days.</b> <b>Countries</b> shows the total days, trips, first and last visit, and the last 12 months for each country. Set a date range at the top to match your form.</li>
-        <li><b>Export when a form asks.</b> Open <span class="path">Settings → Export Travel History</span>, choose a range (Last 5 years, Last 10 years, Last 12 months, Since a date or Custom range), then <b>PDF</b>, <b>CSV</b> or <b>Copy as Text</b>.</li>
-      </ol>
-    </div>
-    <figure><img class="shot" src="assets/screens/photo-import.jpg" alt="The Import from Photos screen, explaining that only the date and place of each photo are read" loading="lazy" decoding="async"></figure>
+<section class="others"><h2>Also from Ryion</h2><div class="others-grid"><a class="other hue-coral" href="../BillCompass/index.html"><img src="../BillCompass/assets/icon.png" width="256" height="256" alt="" loading="lazy"><span><small>01</small><b>Bill Compass</b><em>Every bill you owe in one calm list, with reminders before each one is due.</em></span><i aria-hidden="true">→</i></a><a class="other hue-gold" href="../CinematicTeleprompter/index.html"><img src="../CinematicTeleprompter/assets/icon.png" width="256" height="256" alt="" loading="lazy"><span><small>03</small><b>Cinematic Teleprompter</b><em>Read your script beside the lens while you record in Normal or Cinematic mode.</em></span><i aria-hidden="true">→</i></a></div></section>
+<div class="app-foot"><span>Whereabouts Compass, for iPhone and iPad</span><nav aria-label="Whereabouts Compass pages"><a href="#how">How to Use</a><a href="#faq">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:ryionconsulting@gmail.com">Contact</a></nav></div>
+<footer class="foot">
+  <div class="foot-top">
+    <p class="foot-line">Small apps that <em>keep to themselves.</em></p>
+    <nav aria-label="Footer">
+      <div><h3>The apps</h3><ul><li><a href="../BillCompass/">Bill Compass</a></li><li><a href="">Whereabouts Compass</a></li><li><a href="../CinematicTeleprompter/">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Privacy policies</h3><ul><li><a href="../BillCompass/privacy.html">Bill Compass</a></li><li><a href="privacy.html">Whereabouts Compass</a></li><li><a href="../CinematicTeleprompter/privacy.html">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Support</h3><ul><li><a href="../BillCompass/support.html">Bill Compass</a></li><li><a href="support.html">Whereabouts Compass</a></li><li><a href="../CinematicTeleprompter/support.html">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li><a href="mailto:ryionconsulting@gmail.com">ryionconsulting@gmail.com</a></li></ul></div>
+    </nav>
   </div>
-</div></section>
-
-<section><div class="wide">
-  <div class="gallery">
-    <figure><img class="shot" src="assets/screens/trip-detail.jpg" alt="Trip detail: dates you can edit, the cities visited and a small map" loading="lazy" decoding="async"><figcaption>Trip detail: dates, places and a map</figcaption></figure>
-    <figure><img class="shot" src="assets/screens/countries.jpg" alt="The Countries screen: each country with its total days and trips" loading="lazy" decoding="async"><figcaption>Countries: totals for any date range</figcaption></figure>
-    <figure><img class="shot" src="assets/screens/export.jpg" alt="The Export screen: a date range, what is included, a preview, and PDF and CSV buttons" loading="lazy" decoding="async"><figcaption>Export: PDF, CSV or plain text</figcaption></figure>
-  </div>
-</div></section>
-
-<section><div class="wrap">
-  <h2>Settings worth knowing</h2>
-  <dl class="fields">
-    <dt>Home country</dt><dd>Trips at home are left out of the main list and the exports. It is set from your first location, and you can change it.</dd>
-    <dt>How days are counted</dt><dd><b>Count arrival and departure days</b> is on by default. You can also ignore trips shorter than a number of hours, if your form does. Every export states the rules it used.</dd>
-    <dt>Sync with iCloud</dt><dd>On by default, so your iPhone and iPad agree. It syncs through your own private iCloud, and a change takes effect the next time the app opens.</dd>
-    <dt>Backup</dt><dd><span class="path">Export Travel History → Full Backup and Restore</span> saves everything to one file and brings it back on another device. Restoring only adds what is missing, so it is safe to run twice.</dd>
-    <dt>Deleted Trips</dt><dd>Brings back a trip you deleted.</dd>
-    <dt>How It Works</dt><dd>The first-launch explanation, for when you skipped past it.</dd>
-  </dl>
-</div></section>
-
-<section id="limits"><div class="wrap">
-  <h2>Good to know</h2>
-  <ul class="plain">
-    <li><b>It needs Always location.</b> Without it, days when the app is closed show up as gaps.</li>
-    <li><b>It notices stops, not every mile.</b> A country you only drive or fly through without stopping may not appear.</li>
-    <li><b>Crossing dates can be estimates.</b> When readings are sparse, the border date is marked with an amber <b>?</b>. Check those before you export.</li>
-    <li><b>Borders are accurate to about a kilometre.</b> Right at a border, a reading can land next door. Vatican City counts as Italy.</li>
-    <li><b>Open water is not a country.</b> A cruise shows as a gap between ports.</li>
-    <li><b>Layovers are not detected yet.</b> A stop at an airport can appear as a short trip. Delete it, or set a minimum trip length.</li>
-    <li><b>Photos fill in only what they saw.</b> Imported trips stay estimates until you confirm them.</li>
-    <li><b>It is a record, not advice.</b> It counts days from your own data. It does not decide tax residency or visa eligibility.</li>
-  </ul>
-</div></section>
-
-<section><div class="wrap">
-  <div class="pledge">
-    <span class="stamp">Privacy</span>
-    <p>No account, no ads, no analytics and no third-party code. On the App Store its privacy label reads <b>Data Not Collected</b>. The country is worked out on your phone from built-in maps. The only network requests go to Apple Maps, to name a city and to draw the map on a trip's page. <a href="privacy.html">Read the privacy policy</a>.</p>
-  </div>
-</div></section>
-
-<section id="faq"><div class="wrap">
-  <h2>Questions</h2>
-  <dl>
-    <dt>Does it drain the battery?</dt>
-    <dd>No. It uses the same low-power visit and significant-location services iOS uses itself, based on cell and Wi-Fi. It never turns on continuous GPS.</dd>
-    <dt>Can I use it if I just installed it?</dt>
-    <dd>Yes. That is what the photo import is for. Run it from <span class="path">Settings → Import from Photos</span>, then confirm the trips it finds.</dd>
-    <dt>Can I give it access to only some photos?</dt>
-    <dd>Yes. Limited Access works. Choose <b>Share More Photos</b> on the import screen to add more later.</dd>
-    <dt>A trip has the wrong dates</dt>
-    <dd>Open it and pick the right dates. Any edit confirms the trip, so the app never changes it again.</dd>
-    <dt>How do I move to a new phone?</dt>
-    <dd>With iCloud sync on, your history arrives by itself. Without it, make a backup from <span class="path">Export Travel History → Full Backup and Restore</span> and restore it on the new phone.</dd>
-    <dt>How do I delete everything?</dt>
-    <dd><span class="path">Settings → Privacy → Erase All Data</span>. With iCloud sync on, it is erased from your other devices too.</dd>
-  </dl>
-</div></section>
-
-<footer><div class="wrap">
-  <span>Whereabouts Compass, for iPhone and iPad · <a href="../">More apps by Ryion</a></span>
-  <nav><a href="#how">How to Use</a><a href="#faq">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="mailto:ryionconsulting@gmail.com">Contact</a></nav>
-</div></footer>
+  <p class="foot-mark" aria-hidden="true">Ryion</p>
+  <p class="foot-base"><span>© 2026 Ryion</span><a class="review-link" href="../appstore.html" hidden>App Store media (this Mac only)</a></p>
+</footer>
+<script src="../almanac.js" defer></script>
 </body>
 </html>

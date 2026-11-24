@@ -7,139 +7,105 @@
 <meta name="description" content="Small, private apps for iPhone, iPad and Mac: Bill Compass, Whereabouts Compass and Cinematic Teleprompter. No accounts, no ads, no analytics.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap">
-<style>
-:root{--ground:#F8F5F0;--card:#FFFEFC;--ink:#241C2E;--muted:#6E6478;--hair:#E4DAD0;--accent:#B0462D;
-  --display:"Bricolage Grotesque","Trebuchet MS",sans-serif;
-  --body:"IBM Plex Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,"SF Mono",monospace}
-@media (prefers-color-scheme:dark){:root{--ground:#14151F;--card:#1E2030;--ink:#F2ECE4;--muted:#A59BB3;--hair:#2E3044;--accent:#E07357}}
-*{box-sizing:border-box}
-body{margin:0;background:var(--ground);color:var(--ink);font-family:var(--body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:900px;margin:0 auto;padding:0 24px}
-header{padding:72px 0 36px}
-.mark{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0}
-h1{font-family:var(--display);font-weight:700;letter-spacing:-.025em;line-height:1.05;font-size:clamp(34px,6vw,52px);margin:14px 0 0;text-wrap:balance}
-.lead{color:var(--muted);font-size:19px;max-width:40ch;margin:16px 0 0}
-.apps{list-style:none;padding:0;margin:0 0 64px;display:grid;gap:18px}
-.apps a{display:grid;grid-template-columns:84px 1fr;gap:22px;align-items:center;padding:22px;border-radius:18px;
-  background:var(--card);border:1px solid var(--hair);color:inherit;text-decoration:none}
-.apps a:hover,.apps a:focus-visible{border-color:var(--accent);outline:none}
-.apps img{width:84px;height:84px;border-radius:22.37%;display:block;box-shadow:0 10px 24px -14px rgba(40,20,50,.55)}
-.apps b{display:block;font-family:var(--display);font-size:21px;letter-spacing:-.01em}
-.apps span{display:block;color:var(--muted);font-size:15.5px;margin-top:3px}
-.apps small{display:block;font-family:var(--mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);margin-top:8px}
-.apps .links{display:flex;gap:16px;margin-top:8px;font-size:14.5px;color:var(--accent)}
-.store{margin:0 0 64px}
-.store h2{font-family:var(--display);font-size:clamp(26px,4vw,34px);letter-spacing:-.02em;line-height:1.1;margin:0}
-.store .note{color:var(--muted);margin:10px 0 0;max-width:56ch}
-.app-media{margin-top:40px;padding-top:28px;border-top:1px solid var(--hair)}
-.app-media h3{display:flex;align-items:center;gap:12px;font-family:var(--display);font-size:22px;letter-spacing:-.01em;margin:0}
-.app-media h3 img{width:36px;height:36px;border-radius:22.37%}
-.app-media h4{font-family:var(--mono);font-weight:400;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:24px 0 12px}
-.strip{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding:2px 2px 14px;margin:0 -2px;overscroll-behavior-x:contain}
-.strip figure{flex:none;margin:0;scroll-snap-align:start}
-.strip img,.strip video{display:block;width:auto;height:400px;border-radius:14px;border:1px solid var(--hair);background:var(--card)}
-.strip.ipad img,.strip.ipad video{height:320px}
-.strip a:focus-visible img{outline:2px solid var(--accent);outline-offset:2px}
-.strip video{background:#000}
-.strip figcaption{font-size:13.5px;color:var(--muted);margin-top:7px}
-@media (max-width:520px){.strip img,.strip video{height:320px}.strip.ipad img,.strip.ipad video{height:240px}}
-footer{border-top:1px solid var(--hair);padding:26px 0 44px;color:var(--muted);font-size:14.5px}
-@media (max-width:520px){header{padding-top:48px}.apps a{grid-template-columns:64px 1fr;gap:16px;padding:18px}.apps img{width:64px;height:64px}}
-</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&amp;family=Instrument+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="almanac.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
-<body>
-<header><div class="wrap">
-  <p class="mark">Ryion</p>
-  <h1>Small apps that keep to themselves</h1>
-  <p class="lead">Each one does a single job well. No accounts, no ads, no analytics, and your data stays with you.</p>
-</div></header>
+<body class="home">
+<a class="skip" href="#apps">Skip to the apps</a>
+<header class="mast">
+  <a class="wordmark" href="index.html">Ryion</a>
+  <nav aria-label="Main"><a href="#apps">The apps</a><a href="#rules">House rules</a><a href="mailto:ryionconsulting@gmail.com">Contact</a></nav>
+</header>
 
-<main class="wrap">
-  <ul class="apps">
-    <li><a href="BillCompass/">
-      <img src="BillCompass/assets/icon.png" alt="">
-      <div><b>Bill Compass</b><span>Every bill you owe in one calm list, with reminders before each one is due.</span><small>iPhone · iPad · Mac</small></div>
-    </a></li>
-    <li><a href="WhereaboutsCompass/">
-      <img src="WhereaboutsCompass/assets/icon.png" alt="">
-      <div><b>Whereabouts Compass</b><span>Which countries you were in, and on exactly which dates, ready for immigration and tax forms.</span><small>iPhone · iPad · Free</small></div>
-    </a></li>
-    <li><a href="CinematicTeleprompter/">
-      <img src="CinematicTeleprompter/assets/icon.png" alt="">
-      <div><b>Cinematic Teleprompter</b><span>Read your script beside the lens while you record in Normal or Cinematic mode.</span><small>iPhone · iPad</small></div>
-    </a></li>
-  </ul>
+<section class="hero">
+  <div class="hero-text">
+    <p class="eyebrow">Apps for iPhone, iPad and Mac</p>
+    <h1>Small apps that <em>keep to themselves.</em></h1>
+    <p class="lead">Each one does a single job well. No accounts, no ads, no analytics, and your data stays with you.</p>
+  </div>
+  <div class="rose" aria-hidden="true"><svg class="rose-svg" viewBox="-200 -200 400 400">
+  <defs><path id="ring" d="M0,-183 A183,183 0 1,1 -0.01,-183"/></defs>
+  <g class="rose-words"><text><textPath href="#ring" textLength="1148">NO ACCOUNTS · NO ADS · NO ANALYTICS · YOUR DATA STAYS WITH YOU · NO ACCOUNTS · NO ADS · NO ANALYTICS · YOUR DATA STAYS WITH YOU · </textPath></text></g>
+  <circle r="176"/><circle r="104"/>
+  <g class="rose-ticks"><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(0)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(3)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(6)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(9)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(12)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(15)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(18)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(21)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(24)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(27)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(30)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(33)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(36)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(39)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(42)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(45)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(48)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(51)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(54)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(57)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(60)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(63)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(66)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(69)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(72)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(75)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(78)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(81)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(84)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(87)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(90)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(93)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(96)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(99)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(102)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(105)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(108)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(111)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(114)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(117)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(120)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(123)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(126)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(129)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(132)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(135)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(138)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(141)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(144)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(147)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(150)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(153)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(156)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(159)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(162)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(165)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(168)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(171)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(174)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(177)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(180)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(183)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(186)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(189)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(192)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(195)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(198)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(201)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(204)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(207)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(210)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(213)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(216)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(219)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(222)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(225)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(228)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(231)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(234)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(237)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(240)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(243)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(246)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(249)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(252)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(255)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(258)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(261)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(264)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(267)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(270)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(273)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(276)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(279)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(282)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(285)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(288)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(291)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(294)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(297)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(300)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(303)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(306)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(309)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(312)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(315)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(318)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(321)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(324)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(327)"/><line x1="0" y1="-160" x2="0" y2="-176" transform="rotate(330)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(333)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(336)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(339)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(342)"/><line x1="0" y1="-166" x2="0" y2="-176" transform="rotate(345)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(348)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(351)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(354)"/><line x1="0" y1="-170" x2="0" y2="-176" transform="rotate(357)"/></g>
+  <g class="rose-star"><polygon class="dark" points="0,0 26.79,-64.67 8.97,-45.12"/><polygon class="light" points="0,0 26.79,-64.67 25.56,-38.25"/><polygon class="dark" points="0,0 64.67,-26.79 38.25,-25.56"/><polygon class="light" points="0,0 64.67,-26.79 45.12,-8.97"/><polygon class="dark" points="0,0 64.67,26.79 45.12,8.97"/><polygon class="light" points="0,0 64.67,26.79 38.25,25.56"/><polygon class="dark" points="0,0 26.79,64.67 25.56,38.25"/><polygon class="light" points="0,0 26.79,64.67 8.97,45.12"/><polygon class="dark" points="0,0 -26.79,64.67 -8.97,45.12"/><polygon class="light" points="0,0 -26.79,64.67 -25.56,38.25"/><polygon class="dark" points="0,0 -64.67,26.79 -38.25,25.56"/><polygon class="light" points="0,0 -64.67,26.79 -45.12,8.97"/><polygon class="dark" points="0,0 -64.67,-26.79 -45.12,-8.97"/><polygon class="light" points="0,0 -64.67,-26.79 -38.25,-25.56"/><polygon class="dark" points="0,0 -26.79,-64.67 -25.56,-38.25"/><polygon class="light" points="0,0 -26.79,-64.67 -8.97,-45.12"/><polygon class="dark" points="0,0 67.88,-67.88 13.78,-33.26"/><polygon class="light" points="0,0 67.88,-67.88 33.26,-13.78"/><polygon class="dark" points="0,0 67.88,67.88 33.26,13.78"/><polygon class="light" points="0,0 67.88,67.88 13.78,33.26"/><polygon class="dark" points="0,0 -67.88,67.88 -13.78,33.26"/><polygon class="light" points="0,0 -67.88,67.88 -33.26,13.78"/><polygon class="dark" points="0,0 -67.88,-67.88 -33.26,-13.78"/><polygon class="light" points="0,0 -67.88,-67.88 -13.78,-33.26"/><polygon class="dark" points="0,0 0.00,-128.00 -16.97,-16.97"/><polygon class="light" points="0,0 0.00,-128.00 16.97,-16.97"/><polygon class="dark" points="0,0 128.00,-0.00 16.97,-16.97"/><polygon class="light" points="0,0 128.00,-0.00 16.97,16.97"/><polygon class="dark" points="0,0 0.00,128.00 16.97,16.97"/><polygon class="light" points="0,0 0.00,128.00 -16.97,16.97"/><polygon class="dark" points="0,0 -128.00,0.00 -16.97,16.97"/><polygon class="light" points="0,0 -128.00,0.00 -16.97,-16.97"/></g>
+  <text class="card" x="0" y="-139">N</text><text class="card" x="146" y="7">E</text><text class="card" x="0" y="153">S</text><text class="card" x="-146" y="7">W</text>
+  <g class="rose-needle"><polygon class="north" points="0,-118 6,0 -6,0"/><polygon class="south" points="0,118 6,0 -6,0"/></g>
+  <circle class="pin" r="5"/>
+</svg></div>
+  <ol class="index" aria-label="The apps"><li><a href="#bill-compass"><span>01</span><b>Bill Compass</b><i>iPhone · iPad · Mac</i></a></li><li><a href="#whereabouts-compass"><span>02</span><b>Whereabouts Compass</b><i>iPhone · iPad · Free</i></a></li><li><a href="#cinematic-teleprompter"><span>03</span><b>Cinematic Teleprompter</b><i>iPhone · iPad</i></a></li></ol>
+</section>
 
-  <!-- Review-only: hidden unless _artifacts (a git-ignored link to ~/Documents/App Store Artifacts) is reachable, i.e. on the local preview server. -->
-  <section class="store" aria-labelledby="store-h" hidden>
-    <h2 id="store-h">App Store screenshots and previews</h2>
-    <p class="note">Tap a screenshot for the full-size file. Each app has its own set for iPhone (6.9″) and iPad (13″).</p>
-    <article class="app-media" id="whereabouts">
-      <h3><img src="WhereaboutsCompass/assets/icon.png" alt=""> Whereabouts Compass</h3>
-      <h4>iPhone 6.9″</h4>
-      <div class="strip iphone">
-        <figure><video controls playsinline preload="metadata" width="480" height="1040" src="_artifacts/Whereabouts%20Compass/App%20Previews/iPhone-6.9.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:19</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/01-now.png"><img src="WhereaboutsCompass/assets/store/iphone-01-now.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Now"></a><figcaption>Now</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/02-trips.png"><img src="WhereaboutsCompass/assets/store/iphone-02-trips.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Trips"></a><figcaption>Trips</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/03-countries.png"><img src="WhereaboutsCompass/assets/store/iphone-03-countries.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Countries"></a><figcaption>Countries</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/04-trip-detail.png"><img src="WhereaboutsCompass/assets/store/iphone-04-trip-detail.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Trip detail"></a><figcaption>Trip detail</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/05-export.png"><img src="WhereaboutsCompass/assets/store/iphone-05-export.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Export"></a><figcaption>Export</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/06-photo-import.png"><img src="WhereaboutsCompass/assets/store/iphone-06-photo-import.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Photo import"></a><figcaption>Photo import</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/07-privacy.png"><img src="WhereaboutsCompass/assets/store/iphone-07-privacy.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Privacy"></a><figcaption>Privacy</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/08-now-dark.png"><img src="WhereaboutsCompass/assets/store/iphone-08-now-dark.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Now, dark"></a><figcaption>Now, dark</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/09-trips-dark.png"><img src="WhereaboutsCompass/assets/store/iphone-09-trips-dark.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Trips, dark"></a><figcaption>Trips, dark</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPhone-6.9/10-onboarding-welcome.png"><img src="WhereaboutsCompass/assets/store/iphone-10-onboarding-welcome.jpg" width="480" height="1043" loading="lazy" alt="Whereabouts Compass on iPhone: Welcome"></a><figcaption>Welcome</figcaption></figure>
-      </div>
-      <h4>iPad 13″</h4>
-      <div class="strip ipad">
-        <figure><video controls playsinline preload="metadata" width="600" height="800" src="_artifacts/Whereabouts%20Compass/App%20Previews/iPad-13.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:19</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/01-now.png"><img src="WhereaboutsCompass/assets/store/ipad-01-now.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Now"></a><figcaption>Now</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/02-trips.png"><img src="WhereaboutsCompass/assets/store/ipad-02-trips.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Trips"></a><figcaption>Trips</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/03-countries.png"><img src="WhereaboutsCompass/assets/store/ipad-03-countries.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Countries"></a><figcaption>Countries</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/04-trip-detail.png"><img src="WhereaboutsCompass/assets/store/ipad-04-trip-detail.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Trip detail"></a><figcaption>Trip detail</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/05-export.png"><img src="WhereaboutsCompass/assets/store/ipad-05-export.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Export"></a><figcaption>Export</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/06-photo-import.png"><img src="WhereaboutsCompass/assets/store/ipad-06-photo-import.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Photo import"></a><figcaption>Photo import</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/07-privacy.png"><img src="WhereaboutsCompass/assets/store/ipad-07-privacy.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Privacy"></a><figcaption>Privacy</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/08-now-dark.png"><img src="WhereaboutsCompass/assets/store/ipad-08-now-dark.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Now, dark"></a><figcaption>Now, dark</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/09-trips-dark.png"><img src="WhereaboutsCompass/assets/store/ipad-09-trips-dark.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Trips, dark"></a><figcaption>Trips, dark</figcaption></figure>
-        <figure><a href="WhereaboutsCompass/AppStore/Screenshots/iPad-13/10-onboarding-welcome.png"><img src="WhereaboutsCompass/assets/store/ipad-10-onboarding-welcome.jpg" width="600" height="800" loading="lazy" alt="Whereabouts Compass on iPad: Welcome"></a><figcaption>Welcome</figcaption></figure>
-      </div>
-    </article>
-    <article class="app-media" id="teleprompter">
-      <h3><img src="CinematicTeleprompter/assets/icon.png" alt=""> Cinematic Teleprompter</h3>
-      <h4>iPhone 6.9″</h4>
-      <div class="strip iphone">
-        <figure><video controls playsinline preload="metadata" width="480" height="1040" src="_artifacts/Cinematic%20Teleprompter/App%20Previews/iPhone-6.9.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:22</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/01-recorder.png"><img src="CinematicTeleprompter/assets/store/iphone-01-recorder.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Recorder"></a><figcaption>Recorder</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/02-cinematic.png"><img src="CinematicTeleprompter/assets/store/iphone-02-cinematic.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Cinematic mode"></a><figcaption>Cinematic mode</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/03-library.png"><img src="CinematicTeleprompter/assets/store/iphone-03-library.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Library"></a><figcaption>Library</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/04-script-settings.png"><img src="CinematicTeleprompter/assets/store/iphone-04-script-settings.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Script settings"></a><figcaption>Script settings</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/05-editor.png"><img src="CinematicTeleprompter/assets/store/iphone-05-editor.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Editor"></a><figcaption>Editor</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/06-prompt-only.png"><img src="CinematicTeleprompter/assets/store/iphone-06-prompt-only.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Prompt only"></a><figcaption>Prompt only</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPhone-6.9/07-library-dark.png"><img src="CinematicTeleprompter/assets/store/iphone-07-library-dark.jpg" width="480" height="1043" loading="lazy" alt="Cinematic Teleprompter on iPhone: Library, dark"></a><figcaption>Library, dark</figcaption></figure>
-      </div>
-      <h4>iPad 13″</h4>
-      <div class="strip ipad">
-        <figure><video controls playsinline preload="metadata" width="600" height="800" src="_artifacts/Cinematic%20Teleprompter/App%20Previews/iPad-13.mp4#t=3" onerror="this.closest('figure').remove()"></video><figcaption>App Preview · 0:23</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/01-recorder.png"><img src="CinematicTeleprompter/assets/store/ipad-01-recorder.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Recorder"></a><figcaption>Recorder</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/02-cinematic.png"><img src="CinematicTeleprompter/assets/store/ipad-02-cinematic.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Cinematic mode"></a><figcaption>Cinematic mode</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/03-library.png"><img src="CinematicTeleprompter/assets/store/ipad-03-library.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Library"></a><figcaption>Library</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/04-script-settings.png"><img src="CinematicTeleprompter/assets/store/ipad-04-script-settings.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Script settings"></a><figcaption>Script settings</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/05-editor.png"><img src="CinematicTeleprompter/assets/store/ipad-05-editor.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Editor"></a><figcaption>Editor</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/06-prompt-only.png"><img src="CinematicTeleprompter/assets/store/ipad-06-prompt-only.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Prompt only"></a><figcaption>Prompt only</figcaption></figure>
-        <figure><a href="CinematicTeleprompter/AppStore/Screenshots/iPad-13/07-library-dark.png"><img src="CinematicTeleprompter/assets/store/ipad-07-library-dark.jpg" width="600" height="800" loading="lazy" alt="Cinematic Teleprompter on iPad: Library, dark"></a><figcaption>Library, dark</figcaption></figure>
-      </div>
-    </article>
-  </section>
-  <script>
-    fetch("_artifacts/README.txt", {method: "HEAD", cache: "no-store"})
-      .then(r => { if (r.ok) document.querySelector(".store").hidden = false })
-      .catch(() => {})
-  </script>
+<main id="apps">
+<article class="entry hue-coral" id="bill-compass">
+  <div class="entry-text" data-reveal>
+    <p class="entry-no"><span>N°</span>01</p>
+    <h2><a href="BillCompass/index.html">Bill Compass</a></h2>
+    <p class="blurb">Every bill you owe in one calm list, with reminders before each one is due.</p>
+    <ul class="facts"><li><b>Add each bill once</b><span>Name, amount, due date and how often it repeats.</span></li><li><b>Let it remind you</b><span>A notification before each bill falls due.</span></li><li><b>Touch and hold to pay</b><span>Record the payment and the bill rolls on to its next date.</span></li></ul>
+    <p class="entry-foot"><a class="more" href="BillCompass/index.html">Read about Bill Compass <i aria-hidden="true">→</i></a><span class="meta">iPhone · iPad · Mac</span></p>
+  </div>
+  <a class="entry-art" href="BillCompass/index.html" tabindex="-1" aria-hidden="true">
+    <span class="art-no">01</span>
+    <img class="icon" src="BillCompass/assets/icon.png" width="256" height="256" alt="">
+    <span class="phone p1"><img src="BillCompass/assets/screens/iphone-overview.jpg" width="600" height="1304" alt="" loading="lazy" decoding="async"></span>
+    <span class="phone p2"><img src="BillCompass/assets/screens/iphone-overview-dark.jpg" width="600" height="1304" alt="" loading="lazy" decoding="async"></span>
+  </a>
+</article>
+<article class="entry hue-terra" id="whereabouts-compass">
+  <div class="entry-text" data-reveal>
+    <p class="entry-no"><span>N°</span>02</p>
+    <h2><a href="WhereaboutsCompass/index.html">Whereabouts Compass</a></h2>
+    <p class="blurb">Which countries you were in, and on exactly which dates, ready for immigration and tax forms.</p>
+    <ul class="facts"><li><b>Useful on day one</b><span>Rebuild years of past trips from the dates and places stored in your photos.</span></li><li><b>Silent after that</b><span>No check-ins, no notifications, and no continuous GPS.</span></li><li><b>Ready to export</b><span>A PDF to attach, a CSV for a spreadsheet, or one trip per line to paste into a web form.</span></li></ul>
+    <p class="entry-foot"><a class="more" href="WhereaboutsCompass/index.html">Read about Whereabouts Compass <i aria-hidden="true">→</i></a><span class="meta">iPhone · iPad · Free</span></p>
+  </div>
+  <a class="entry-art" href="WhereaboutsCompass/index.html" tabindex="-1" aria-hidden="true">
+    <span class="art-no">02</span>
+    <img class="icon" src="WhereaboutsCompass/assets/icon.png" width="256" height="256" alt="">
+    <span class="phone p1"><img src="WhereaboutsCompass/assets/screens/now.jpg" width="600" height="1304" alt="" loading="lazy" decoding="async"></span>
+    <span class="phone p2"><img src="WhereaboutsCompass/assets/screens/trips.jpg" width="600" height="1304" alt="" loading="lazy" decoding="async"></span>
+  </a>
+</article>
+<article class="entry hue-gold" id="cinematic-teleprompter">
+  <div class="entry-text" data-reveal>
+    <p class="entry-no"><span>N°</span>03</p>
+    <h2><a href="CinematicTeleprompter/index.html">Cinematic Teleprompter</a></h2>
+    <p class="blurb">Read your script beside the lens while you record in Normal or Cinematic mode.</p>
+    <ul class="facts"><li><b>Eye contact, naturally</b><span>The script sits in a band at the edge nearest the camera.</span></li><li><b>Cinematic mode</b><span>Shallow depth of field with focus you can move, on iPhones that support it.</span></li><li><b>Follows your voice</b><span>Voice-Follow scrolls as you speak, waits when you pause and catches up if you skip a line.</span></li></ul>
+    <p class="entry-foot"><a class="more" href="CinematicTeleprompter/index.html">Read about Cinematic Teleprompter <i aria-hidden="true">→</i></a><span class="meta">iPhone · iPad</span></p>
+  </div>
+  <a class="entry-art" href="CinematicTeleprompter/index.html" tabindex="-1" aria-hidden="true">
+    <span class="art-no">03</span>
+    <img class="icon" src="CinematicTeleprompter/assets/icon.png" width="256" height="256" alt="">
+    <span class="phone p1"><img src="CinematicTeleprompter/assets/screens/recorder.jpg" width="600" height="1304" alt="" loading="lazy" decoding="async"></span>
+    <span class="phone p2"><img src="CinematicTeleprompter/assets/screens/cinematic.jpg" width="600" height="1304" alt="" loading="lazy" decoding="async"></span>
+  </a>
+</article>
 </main>
 
-<footer><div class="wrap">© 2026 Ryion · Privacy policies: <a href="BillCompass/privacy.html" style="color:inherit">Bill Compass</a>, <a href="WhereaboutsCompass/privacy.html" style="color:inherit">Whereabouts Compass</a>, <a href="CinematicTeleprompter/privacy.html" style="color:inherit">Cinematic Teleprompter</a></div></footer>
+<section class="rules" id="rules">
+  <header data-reveal>
+    <p class="eyebrow">House rules</p>
+    <h2>The same rules, <em>in every app.</em></h2>
+  </header>
+  <dl class="rules-ledger"><div data-reveal><dt>Accounts</dt><dd>None</dd></div><div data-reveal><dt>Ads</dt><dd>None</dd></div><div data-reveal><dt>Analytics</dt><dd>None</dd></div><div data-reveal><dt>Third-party code</dt><dd>None</dd></div><div data-reveal><dt>Your data</dt><dd>On your device, and in your own iCloud</dd></div></dl>
+</section>
+
+<footer class="foot">
+  <div class="foot-top">
+    <p class="foot-line">Small apps that <em>keep to themselves.</em></p>
+    <nav aria-label="Footer">
+      <div><h3>The apps</h3><ul><li><a href="BillCompass/">Bill Compass</a></li><li><a href="WhereaboutsCompass/">Whereabouts Compass</a></li><li><a href="CinematicTeleprompter/">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Privacy policies</h3><ul><li><a href="BillCompass/privacy.html">Bill Compass</a></li><li><a href="WhereaboutsCompass/privacy.html">Whereabouts Compass</a></li><li><a href="CinematicTeleprompter/privacy.html">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Support</h3><ul><li><a href="BillCompass/support.html">Bill Compass</a></li><li><a href="WhereaboutsCompass/support.html">Whereabouts Compass</a></li><li><a href="CinematicTeleprompter/support.html">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li><a href="mailto:ryionconsulting@gmail.com">ryionconsulting@gmail.com</a></li></ul></div>
+    </nav>
+  </div>
+  <p class="foot-mark" aria-hidden="true">Ryion</p>
+  <p class="foot-base"><span>© 2026 Ryion</span><a class="review-link" href="appstore.html" hidden>App Store media (this Mac only)</a></p>
+</footer>
+<script src="almanac.js" defer></script>
 </body>
 </html>

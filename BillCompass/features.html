@@ -6,27 +6,35 @@
 <title>Features — Bill Compass</title>
 <meta name="description" content="Every screen in Bill Compass: the Overview, Calendar, History, Reports, Tags, reminders, automatic payments and layouts for iPad and Mac.">
 <link rel="icon" href="assets/icon.png">
+<link rel="apple-touch-icon" href="assets/icon.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,700&family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;500&display=swap">
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT@0,9..144,300..700,0..100;1,9..144,300..700,0..100&amp;family=Instrument+Sans:wght@400;500;600&amp;family=IBM+Plex+Mono:wght@400;500&amp;display=swap">
+<link rel="stylesheet" href="../almanac.css">
+<script>document.documentElement.classList.add("js")</script>
 </head>
-<body>
-<header class="topbar"><div class="wrap">
-  <a class="brand" href="index.html"><img src="assets/icon.png" alt=""> Bill Compass</a>
-  <nav><a href="features.html" aria-current="page">Features</a><a href="guide.html">How to Use</a><a href="sync.html">Sync</a><a href="faq.html">FAQ</a><a href="support.html">Support</a></nav>
-</div></header>
+<body class="app doc-page page-features hue-coral">
+<a class="skip" href="#main">Skip to the content</a>
+<header class="mast">
+  <a class="wordmark" href="../index.html">Ryion</a>
+  <a class="crumb" href="index.html"><img src="assets/icon.png" width="256" height="256" alt="">Bill Compass</a>
+  <nav aria-label="Bill Compass"><a href="features.html" aria-current="page">Features</a><a href="guide.html">How to Use</a><a href="sync.html">Sync</a><a href="faq.html">FAQ</a><a href="support.html">Support</a></nav>
+</header>
+
+<main id="main" class="doc">
 <section><div class="wrap">
-  <h1 style="font-size:clamp(30px,5.5vw,44px);margin-top:0">Features</h1>
+  <h1>Features</h1>
   <p class="lead">A tour of every screen. For step-by-step instructions, see <a href="guide.html">How to Use</a>.</p>
 </div></section>
 
 <section id="overview" style="padding-top:0"><div class="wide">
   <div class="split">
     <div>
-      <h2>Overview — what you owe, soonest first</h2>
-      <p>Every bill you are tracking, in due-date order, with its amount and a plain countdown: <em>Due today</em>, <em>Due in 3 days</em>, <em>Overdue</em>. The colour of the countdown tells you how close it is, from red for late through amber to teal for comfortably far off.</p>
+      <h2>Overview — what you owe, and when</h2>
+      <p>Every bill you are tracking, grouped by when it falls due: <em>Overdue</em>, <em>Today</em>, <em>Next 7 Days</em>, <em>In 2 Weeks</em>, <em>Within 30 Days</em> and <em>Later</em>, each group with how many bills it holds and what they come to. Each bill shows its amount and a plain countdown: <em>Due today</em>, <em>Due in 3 days</em>. The colour of the countdown tells you how close it is, from red for late through amber to teal for comfortably far off.</p>
+      <p>Above the bills, a chart of the next 30 days shows what is due in the next 7 and 30 days and what you have paid this month, with a bar for each day.</p>
       <p>Two filters narrow the list: <b>Category</b>, and <b>Due</b> — Overdue, Current Month, or the next 30, 60 or 90 days. A half-filled circle marks a bill you have part paid.</p>
+      <p>A bill a few days past its due date with no payment recorded reads <em>Paid? Not recorded yet</em> rather than overdue, and a banner offers <b>Review</b>. That opens <b>Record Past Bills</b>, where you record a payment for each one, or skip a cycle you didn't pay, so Reports stay accurate.</p>
       <p>The dot beside the page title is the one-glance verdict: <b style="color:var(--green)">green</b> when nothing is late, <b style="color:var(--gold)">amber</b> at one or two overdue bills, red beyond that.</p>
     </div>
     <figure><img class="shot" src="assets/screens/iphone-overview.jpg" alt="The Overview screen" loading="lazy" decoding="async"></figure>
@@ -93,11 +101,12 @@
 </div></section>
 
 <section id="layouts"><div class="wide">
-  <h2>Three layouts on iPad and Mac</h2>
-  <p class="lead" style="max-width:62ch">Choose how the Overview arranges your bills in Settings → Appearance → Bill Layout: <b>Tile</b>, a list of rows; <b>Grid</b>, bills side by side wherever there is room for two columns — a Mac window, or an iPad held sideways; or <b>Stickie</b>, a board of paper notes. The iPhone keeps the list, which suits its width best.</p>
+  <h2>Four layouts on iPad and Mac</h2>
+  <p class="lead" style="max-width:62ch">Choose how the Overview arranges your bills in <span class="path">Settings → Appearance → Bill Layout</span>, or with the buttons above the bills: <b>Timeline</b>, the bills grouped by when they fall due, in as many lanes side by side as the width holds; <b>Tile</b>, a single list of rows; <b>Grid</b>, the same rows filling a wide window; or <b>Stickie</b>, a board of paper notes. The iPhone always shows the timeline as one list, which suits its width best.</p>
+  <p class="lead" style="max-width:62ch">When there is room, <b>Bill Details</b> (⌥⌘I on the Mac) opens beside the bills: everything about the selected bill, its recent payments, and buttons to Record Payment, Skip, Edit, see its History, Archive or Delete it.</p>
   <div class="gallery" style="grid-template-columns:repeat(2,minmax(0,1fr));max-width:860px;margin-left:auto;margin-right:auto">
-    <div style="grid-column:1/-1;margin-bottom:10px"><figure><img class="shot tablet" src="assets/screens/mac-grid.jpg" alt="Bills arranged in two columns on the Mac" loading="lazy" decoding="async"><figcaption>Grid, on the Mac</figcaption></figure></div>
-    <figure><img class="shot tablet" src="assets/screens/ipad-stickie.jpg" alt="Bills arranged as paper notes on iPad" loading="lazy" decoding="async"><figcaption>Stickie</figcaption></figure>
+    <div style="grid-column:1/-1;margin-bottom:10px"><figure><img class="shot tablet" src="assets/screens/mac-overview.jpg" alt="The timeline on the Mac: bills grouped by when they fall due in two lanes, with Bill Details for Rent open beside them" loading="lazy" decoding="async"><figcaption>Timeline with Bill Details, on the Mac</figcaption></figure></div>
+    <figure><img class="shot tablet" src="assets/screens/ipad-stickie.jpg" alt="Bills arranged as paper notes on iPad" loading="lazy" decoding="async"><figcaption>Stickie, on iPad</figcaption></figure>
     <figure><img class="shot tablet" src="assets/screens/ipad-calendar.jpg" alt="The Calendar on iPad, with each bill named on its day" loading="lazy" decoding="async"><figcaption>Calendar on iPad</figcaption></figure>
   </div>
 </div></section>
@@ -116,9 +125,23 @@
     <li><b>iCloud sync</b><span>The same bills on iPhone, iPad and Mac, through your own iCloud. <a href="sync.html">A one-time purchase</a>.</span></li>
   </ul>
 </div></section>
-<footer><div class="wrap">
-  <span>Bill Compass — for iPhone, iPad and Mac · <a href="../">More apps by Ryion</a></span>
-  <nav><a href="features.html">Features</a><a href="guide.html">How to Use</a><a href="sync.html">iCloud Sync</a><a href="faq.html">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav>
-</div></footer>
+</main>
+
+<section class="others"><h2>Also from Ryion</h2><div class="others-grid"><a class="other hue-terra" href="../WhereaboutsCompass/index.html"><img src="../WhereaboutsCompass/assets/icon.png" width="256" height="256" alt="" loading="lazy"><span><small>02</small><b>Whereabouts Compass</b><em>Which countries you were in, and on exactly which dates, ready for immigration and tax forms.</em></span><i aria-hidden="true">→</i></a><a class="other hue-gold" href="../CinematicTeleprompter/index.html"><img src="../CinematicTeleprompter/assets/icon.png" width="256" height="256" alt="" loading="lazy"><span><small>03</small><b>Cinematic Teleprompter</b><em>Read your script beside the lens while you record in Normal or Cinematic mode.</em></span><i aria-hidden="true">→</i></a></div></section>
+<div class="app-foot"><span>Bill Compass — for iPhone, iPad and Mac</span><nav aria-label="Bill Compass pages"><a href="features.html">Features</a><a href="guide.html">How to Use</a><a href="sync.html">iCloud Sync</a><a href="faq.html">FAQ</a><a href="support.html">Support</a><a href="privacy.html">Privacy</a></nav></div>
+<footer class="foot">
+  <div class="foot-top">
+    <p class="foot-line">Small apps that <em>keep to themselves.</em></p>
+    <nav aria-label="Footer">
+      <div><h3>The apps</h3><ul><li><a href="">Bill Compass</a></li><li><a href="../WhereaboutsCompass/">Whereabouts Compass</a></li><li><a href="../CinematicTeleprompter/">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Privacy policies</h3><ul><li><a href="privacy.html">Bill Compass</a></li><li><a href="../WhereaboutsCompass/privacy.html">Whereabouts Compass</a></li><li><a href="../CinematicTeleprompter/privacy.html">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Support</h3><ul><li><a href="support.html">Bill Compass</a></li><li><a href="../WhereaboutsCompass/support.html">Whereabouts Compass</a></li><li><a href="../CinematicTeleprompter/support.html">Cinematic Teleprompter</a></li></ul></div>
+      <div><h3>Contact</h3><ul><li><a href="mailto:ryionconsulting@gmail.com">ryionconsulting@gmail.com</a></li></ul></div>
+    </nav>
+  </div>
+  <p class="foot-mark" aria-hidden="true">Ryion</p>
+  <p class="foot-base"><span>© 2026 Ryion</span><a class="review-link" href="../appstore.html" hidden>App Store media (this Mac only)</a></p>
+</footer>
+<script src="../almanac.js" defer></script>
 </body>
 </html>
